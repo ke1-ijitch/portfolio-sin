@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    opacity: 0;
+    width: 0;
+}
+
+/* thin */
+@font-face{
+    font-family: ''Gothic A1'';
+    src: url('../font/GothicA1-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+/* Extra Light */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url('../font/GothicA1-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+/* Light */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url('../font/GothicA1-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+/* Regular */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url('../font/GothicA1-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* Medium */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url('../font/GothicA1-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+/* Semi Bold */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url('../font/GothicA1-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+/* Bold */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url('../font/GothicA1-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+/* Extra Bold */
+@font-face{
+    font-family: 'Gothic A1';
+    src: url('../font/GothicA1-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+/* Black */
+@font-face{
+    font-family: Gothic A1;
+    src: url('../font/GothicA1-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+canvas{
+    pointer-events: none;
+}
