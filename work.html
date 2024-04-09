@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <link rel="apple-touch-icon" href="lib/img/fabicon.ico">
+    <link rel="icon" href="lib/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="lib/css/pc/layout.css" >
+    <link rel="stylesheet" href="lib/css/common.css" >
+    <link rel="stylesheet" href="lib/css/pc/style.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="86400">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!-- Three.jsのスクリプトを読み込む -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://github.com/jwagner/simplex-noise.js"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="glCanvas"></canvas>
+        <h1 class="work">Work</h1>
+        <p class="name">Ibuki Takamatsu</p>
+        <div class="sns">
+            <img class="sns_icon" src="lib/img/snsicon/instagram.png" alt="">
+            <img class="sns_icon" src="lib/img/snsicon/github.png" alt="">
+            <img class="sns_icon" src="lib/img/snsicon/X.png" alt="">
+        </div>
+        <a href="#" onclick="history.back(); return false;"><p class="return"><span class="return-icon">&lt;</span></p></a>
+        <div class="content-container">
+            <h1 class="work-kind">Pop&Poster</h1>
+            <div class="work-flex">
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tetutoma">鉄からトマト？！</h1>
+                    <img class="content-img" src="lib/img/work/work-pop-1.png" alt="">
+                    <p class="kind">Pop&Poster</p>
+                    <p class="work-description">本デザインは見た方に<br>インパクトを与え認知してもらうことを目的に、作成しました。<br>鉄鋼会社が営むトマト事業ということもあり、ファーストインパクトを大事にすべく、トマトを大きく配置し、文字のサイズを調整したことにより目を引くデザインにすることが出来ました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tetuayu">鉄と歩む</h1>
+                    <img class="content-img" src="lib/img/work/work-pop-2.png" alt="">
+                    <p class="kind">Pop&Poster</p>
+                    <p class="work-description">本デザインは就活生に向け、作成しました。<br>鉄鋼会社へ対するイメージを払拭すべく、<br>モダンな雰囲気や洗練された雰囲気を<br>出すために、ベースカラーを白ではなく<br>深い青にしています。<br>ただ、やはり現実とのギャップはなるべく<br>少なくしたかったので、鉄鋼の写真を<br>組み合わせ、右上に配置しました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="anatomo">「あなた」と共に</h1>
+                    <img class="content-img" src="lib/img/work/work-pop-3.png" alt="">
+                    <p class="kind">Pop&Poster</p>
+                    <p class="work-description">本デザインは中途採用で使用するために作成しました。<br>中途採用ではいかに楽しく仕事ができるか<br>という部分を重視されていたので、<br>漫画調の枠の内部に写真を配置することで、ポップな雰囲気に仕上げました。</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <h1 class="work-kind">Banner</h1>
+            <div class="work-flex">
+                <div class="content-wrap">
+                    <h1 class="content-name" id="kokugyu">国産牛切り落とし</h1>
+                    <img class="content-img" src="lib/img/work/work-banner-1.png" alt="">
+                    <p class="kind">Banner</p>
+                    <p class="work-description">本デザインはECサイトのファーストビューとして作成しました。<br>以前に使用されていたバナーは、<br>パックの牛肉がメインの牛肉の写真と被り、視認性が低かったため、ワンポイント図形を入れ、パックを目立つように配置しました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="mikan">温州みかん</h1>
+                    <img class="content-img" src="lib/img/work/work-banner-2.png" alt="">
+                    <p class="kind">Banner</p>
+                    <p class="work-description">本デザインはECサイトのファーストビューとして作成しました。<br>潮風と海を強調してほしいとのご依頼だったので、背景に海を配置、説明文を<br>透明感のある表現にすることで、<br>潮風の優しい雰囲気を出しました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="nahato">ナハトムジーク</h1>
+                    <img class="content-img" src="lib/img/banner/pc/banner-3.png" alt="">
+                    <p class="kind">Banner</p>
+                    <p class="work-description">本デザインは曲のイメージを、形にしました。本楽曲の理想と現実のギャップを嘆きながらも前を向こう。といったニュアンスを表現しています。</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <h1 class="work-kind">Package</h1>
+            <div class="work-flex">
+                <div class="content-wrap">
+                    <h1 class="content-name" id="sotudan">卒団ムービー</h1>
+                    <img class="content-img" src="lib/img/work/work-package-1.png" alt="">
+                    <p class="kind">Package</p>
+                    <p class="work-description">卒団ムービーのケースデザインを作成しました。<br>卒団というおめでたい時に、もらえると嬉しくなるように、チーム名を金色に、重厚感のあるデザインにし高級感を演出しました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tomabako">トマト箱</h1>
+                    <img class="content-img" src="lib/img/work/work-package-2.png" alt="">
+                    <p class="kind">Package</p>
+                    <p class="work-description">トマトのギフト用のパッケージを作成しました。高級トマトを売りにしていて、実も濃く赤く宝石のようだったので、宝石箱に似せてパッケージをデザインしました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tomatetu">鉄からトマト？！</h1>
+                    <img class="content-img" src="lib/img/work/work-package-3.png" alt="">
+                    <p class="kind">Package</p>
+                    <p class="work-description">本デザインは見た方に<br>インパクトを与え認知してもらうことを目的に、作成しました。<br>鉄鋼会社が営むトマト事業ということもあり、ファーストインパクトを大事にすべく、鉄を強調し、文字の配置を調整したことにより目を引くデザインにすることが出来ました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tomato">神戸スイーツトマト</h1>
+                    <img class="content-img" src="lib/img/work/work-package-4.png" alt="">
+                    <p class="kind">Package</p>
+                    <p class="work-description">本デザインはターゲット層に向け高級感を出すべく作成しました。<br>トマトの深い赤を基調とし、作成したアイコンをメインに線画風に描写することで、<br>高級感を出すことが出来ました。</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <h1 class="work-kind">Pictogram</h1>
+            <div class="work-flex">
+                <div class="content-wrap">
+                    <h1 class="content-name" id="icon">アイコン</h1>
+                    <img class="content-img" src="lib/img/work/work-pictogram-1.png" alt="">
+                    <p class="kind">Pictogram</p>
+                    <p class="work-description">採用ページで利用するアイコンです。<br>採用ページに福利厚生が文字で記載してあったのですが、文字だけでは伝わりづらく、印象にも残らないので、一人でも多くの就活生の印象に残ってもらうことを意識し、わかりやすく可愛いアイコンに仕上げました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tomalogo">トマトロゴ</h1>
+                    <img class="content-img" src="lib/img/work/work-pictogram-2.png" alt="">
+                    <p class="kind">Pictogram</p>
+                    <p class="work-description">ターゲット層が女性だったので、<br>ミニトマトのへたの部分をティアラに見立てデザインし、おもに神戸で販売するので<br>ティアラの奥の一つをく神戸タワーにしています。<br>また、高級感を出したかったので、影や光が当たった部分をイメージさせるような表現にしています。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tomai">トマトアイコン</h1>
+                    <img class="content-img" src="lib/img/work/work-pictogram-3.png" alt="">
+                    <p class="kind">Pictogram</p>
+                    <p class="work-description">ターゲット層が女性だったので、ミニトマトのへたの部分をティアラに見立てデザインし、輪郭線を太くデザインすることで、かわいくポップに仕上げることが出来ました。</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <h1 class="work-kind">Typography</h1>
+            <div class="work-flex">
+                <div class="content-wrap">
+                    <h1 class="content-name" id="tetumira">鉄と未来</h1>
+                    <img class="content-img" src="lib/img/work/work-typography-1.png" alt="">
+                    <p class="kind">Typography</p>
+                    <p class="work-description">本タイポグラフィは、ポップなバナーに使用したものです。<br>なので、鉄のイメージに重きを置くよりも、未来の方に焦点を当てて、文字を丸く木に見立てることで、温かくやわらかなデザインにすることが出来ました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="hutaba">双葉</h1>
+                    <img class="content-img" src="lib/img/work/work-typography-2.png" alt="">
+                    <p class="kind">Typography</p>
+                    <p class="work-description">本タイポグラフィは、楽曲を参考に作成したものです。<br>楽曲の全体的なイメージは明るく温かいものなのですが、中に涙を思わせる描写があるので、涙をイメージしたイラストを中央に配置し、カタバミを配置することで曲のイメージに合うデザインになりました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="party">PARTY</h1>
+                    <img class="content-img" src="lib/img/work/work-typography-3.png" alt="">
+                    <p class="kind">Typography</p>
+                    <p class="work-description">製図のようなラフさがありつつも、正確性のある文字に仕上げることで、カジュアルにも使用ができ、フォーマルなデザインにも使用ができるものになりました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="hananibourei">花に亡霊</h1>
+                    <img class="content-img" src="lib/img/work/work-typography-4.png" alt="">
+                    <p class="kind">Typography</p>
+                    <p class="work-description">楽曲の透き通るようなイメージと、雨をイメージし作成しました。<br>本楽曲は夏がモチーフになっていて、全体的に懐かしいような切なくなるような楽曲なので、MVにも出てくる雨を表現できるよう作成しました。<br>アツモリソウの花言葉も楽曲にあっていたのでアツモリソウをワンポイント加えました。</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <h1 class="work-kind">Site</h1>
+            <div class="work-flex">
+                <div class="content-wrap">
+                    <h1 class="content-name" id="job">転職エージェント</h1>
+                    <img class="content-img" src="lib/img/work/work-site-1.png" alt="">
+                    <p class="kind">Site</p>
+                    <p class="work-description">本サイトは転職エージェントのサイトなので、清潔感に加えて気軽に利用してもらえるよう、オレンジの背景文字などワンポイント遊び心も加えました。</p>
+                </div>
+                <div class="content-wrap">
+                    <h1 class="content-name" id="kobe">センアーノ神戸</h1>
+                    <img class="content-img" src="lib/img/work/work-site-2.png" alt="">
+                    <p class="kind">Site</p>
+                    <p class="work-description">本サイトはサッカーチームのHPなので、<br>閲覧者の方々が見やすいよう情報を整理しました。<br>また、チームカラーが赤色なので、その赤をメインにし、サブカラーやサブユニフォームのカラーも使用し、このチームを印象付けるデザインにしました。</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <h1 class="work-kind">LP</h1>
+            <div class="work-flex">
+                <div class="content-wrap">
+                    <h1 class="content-name" id="decobull">デコブル</h1>
+                    <img class="content-img" src="lib/img/work/work-lp-1.png" alt="">
+                    <p class="kind">LP</p>
+                    <p class="work-description">本LPはBtoBで使用するため物であり、上層部の方も閲覧するので、シンプルに機能面での情報をまとめました。カラースキームは本製品のロゴカラーをもとに考えました。</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="lib/js/glitch.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        let lenis = new Lenis();
+
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+        // カーソル用のdivタグを取得してcursorに格納
+        var cursor = document.getElementById('cursor'); 
+
+        // カーソル用のdivタグをマウスに追従させる
+        document.addEventListener('mousemove', function (e) {
+            cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        // リンクにホバーした時にクラス追加、離れたらクラス削除
+        var link = document.querySelectorAll('a,button');
+        for (var i = 0; i < link.length; i++) {
+            link[i].addEventListener('mouseover', function (e) {
+                cursor.classList.add('cursor--hover');
+            });
+            link[i].addEventListener('mouseout', function (e) {
+                cursor.classList.remove('cursor--hover');   
+            });
+        }
+
+        // 特定のセクションにスクロール
+        $('#page-link a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+        var pos = $(elmHash).offset().top;  //idの上部の距離を取得
+        $('body,html').animate({scrollTop: pos}, 800); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+        return false;
+        });
+
+        window.addEventListener("scroll", function () {
+        const elm = document.querySelector(".toppoint");
+        const scroll = window.pageYOffset;
+        if (scroll > 400) {
+            elm.style.opacity = "1";
+            elm.style.zIndex = "1";
+            // console.log(scroll);
+        } else {
+            elm.style.opacity = "0";
+            elm.style.zIndex = "-1";
+            // console.log(scroll);
+        }
+        });
+
+        window.addEventListener("scroll", function () {
+        const opa = document.querySelector(".button-lineset-sp");
+        const scroller = window.pageYOffset;
+        if (scroller > 400) {
+            opa.style.opacity = "0.5";
+            opa.style.zIndex = "1000";
+            // console.log(scroll);
+        } else {
+            opa.style.opacity = "1";
+            opa.style.zIndex = "1000";
+            // console.log(scroll);
+        }
+        });
+    </script>
+</body>
+</html>
