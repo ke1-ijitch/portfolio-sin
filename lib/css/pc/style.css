@@ -332,7 +332,7 @@
     
 }
 
-@media screen and (min-width:670px) {
+@media screen and (max-width:950px) {
     
     .entry_massage{
         font-size: 25px;
