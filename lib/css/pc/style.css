@@ -323,3 +323,47 @@
     width: 100%;
     margin: auto;
 }
+
+@media screen and (min-width:670px) {
+    
+    #sp{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:670px) {
+    
+    .entry_massage{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:670px) {
+
+    #pc{
+        display: none;
+    }
+
+    #sp{
+        width: 100%;
+    }
+
+    .entry_massage{
+        font-size: 20px;
+        width: 180px;
+    }
+
+    .agree{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .yes,.no{
+        font-size: 20px;
+    }
+
+}
