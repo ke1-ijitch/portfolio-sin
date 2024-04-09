@@ -32,6 +32,7 @@ transform: translate(-50%,-50%);
     position: absolute;
     padding: 60px;
     gap: 10px;
+    top: 0;
 }
 
 .main-container{
@@ -51,6 +52,7 @@ transform: translate(-50%,-50%);
     color: #ffffff;
     font-weight: 100;
     padding-bottom: 20px;
+    margin-left: 10px;
 }
 
 .footer-border{
@@ -75,4 +77,15 @@ transform: translate(-50%,-50%);
     font-weight: 100;
     text-align: center;
     margin: 40px 0 10px;
+}
+
+.work{
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 100;
+    text-shadow: 2.5px 0px 0px #ff0000, -2.5px 0px 0px #0d00ff;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
 }
