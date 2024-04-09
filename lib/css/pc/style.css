@@ -5,6 +5,7 @@
     width: 100%;
     height: 100vh;
     z-index: 0;
+    top: 0;
 }
 
 #glCanvas{
@@ -14,6 +15,7 @@
     width: 100%;
     height: 100vh;
     z-index: 500;
+    top: 0;
 }
 
 .entry_container{
@@ -119,7 +121,7 @@
     top: 3%;
     left: 50%;
     transform: translateX(-50%);
-    text-shadow: 2px 0px 0px #ff0000, -2px 0px 0px #0d00ff;
+    text-shadow: 2.5px 0px 0px #ff0000, -2.5px 0px 0px #0d00ff;
     z-index: 0;
 }
 
@@ -128,9 +130,10 @@
     color: #ffffff;
     position: absolute;
     font-weight: 100;
-    text-shadow: 2px 0px 0px #ff0000, -2px 0px 0px #0d00ff;
+    text-shadow: 1.5px 0px 0px #ff0000, -1.5px 0px 0px #0d00ff;
     z-index: 0;
     padding: 20px;
+    top: 0;
 }
 
 .space{
@@ -140,6 +143,14 @@
 .sns_icon{
     width: 25px;
     height: 25px;
+}
+
+@media screen and (max-width:600px) {
+
+    .name,.sns{
+        display: none;
+    }
+    
 }
 
 .scroll-bar-position{
@@ -227,4 +238,88 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 100px;
+    justify-content: space-evenly;
+}
+
+.work-kind{
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+}
+
+.work-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap row;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.content-wrap{
+    max-width: 300px;
+    width: 100%;
+}
+
+.content-img{
+    max-width: 300px;
+    width: 100%;
+}
+
+.content-wrap-n{
+    max-width: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width:550px) {
+    
+.side-menu{
+    display: none;
+}
+
+}
+
+.content-name{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.kind{
+    color: #ffffff;
+    text-align: right;
+    font-weight: 100;
+}
+
+.work-description{
+    text-align: left;
+    color: #ffffff;
+    padding: 20px 5px;
+    font-size: 14px;
+}
+
+.return{
+    position: fixed;
+    text-align: center;
+    background-color: #289e00;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;    
+    margin: 20px;
+    font-size: 30px;
+}
+
+.return-icon{
+    position: relative;
+    top: 2px;
+    right: 2px;
+    font-weight: 100;
+}
+
+.content-container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
 }
