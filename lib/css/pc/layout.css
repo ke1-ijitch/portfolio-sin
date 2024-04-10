@@ -30,7 +30,7 @@ transform: translate(-50%,-50%);
 .sns{
     display: flex;
     position: absolute;
-    padding: 60px;
+    margin: 60px;
     gap: 10px;
     top: 0;
 }
