@@ -132,7 +132,7 @@
     font-weight: 100;
     text-shadow: 1.5px 0px 0px #ff0000, -1.5px 0px 0px #0d00ff;
     z-index: 0;
-    padding: 20px;
+    margin: 20px;
     top: 0;
 }
 
@@ -366,4 +366,56 @@
         font-size: 20px;
     }
 
+}
+
+.philosophy{
+    color: #ffffff;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.philosophy-description{
+    color: #ffffff;
+    padding: 50px 5% 0;
+    text-align: left;
+}
+
+.p-name{
+    color: #ffffff;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.p-logo{
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin: 50px;
+    pointer-events: none;
+}
+
+.profile-container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#name,#tel,#mail,#address,#skill{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.profile{
+    margin-bottom: 50px
+}
+
+.footer-container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
 }
