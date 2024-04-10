@@ -15,13 +15,13 @@
     <script src="https://github.com/jwagner/simplex-noise.js"></script>
 </head>
 <body>
-    <body>
+    <body id="top">
         <div id="cursor"></div>
         <div id="stalker"></div>
     <div class="container">
         <canvas id="glCanvas"></canvas>
         <h1 class="work">Work</h1>
-        <p class="name">Ibuki Takamatsu</p>
+        <a href="profile.html"><p class="name">Ibuki Takamatsu</p></a>
         <div class="sns">
             <img class="sns_icon" src="lib/img/snsicon/instagram.png" alt="">
             <img class="sns_icon" src="lib/img/snsicon/github.png" alt="">
@@ -183,7 +183,16 @@
                 </div>
             </div>
         </div>
-        
+        <div class="footer-container">
+            <p class="footer-border"></p>
+            <div class="footer" id="page-link">
+                <a href="top.html"><p class="footer-word">Top</p></a>
+                <a href="#top"><p class="footer-word">Work</p></a>
+                <p class="footer-word">Profile</p>
+                <p class="footer-word">Contact</p>
+            </div>
+            <p class="copy-right">© 2024 Ibuki Takamatsu.</p>
+        </div>
     </div>
     <script src="lib/js/glitch.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
@@ -206,34 +215,6 @@
         var pos = $(elmHash).offset().top;  //idの上部の距離を取得
         $('body,html').animate({scrollTop: pos}, 800); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
         return false;
-        });
-
-        window.addEventListener("scroll", function () {
-        const elm = document.querySelector(".toppoint");
-        const scroll = window.pageYOffset;
-        if (scroll > 400) {
-            elm.style.opacity = "1";
-            elm.style.zIndex = "1";
-            // console.log(scroll);
-        } else {
-            elm.style.opacity = "0";
-            elm.style.zIndex = "-1";
-            // console.log(scroll);
-        }
-        });
-
-        window.addEventListener("scroll", function () {
-        const opa = document.querySelector(".button-lineset-sp");
-        const scroller = window.pageYOffset;
-        if (scroller > 400) {
-            opa.style.opacity = "0.5";
-            opa.style.zIndex = "1000";
-            // console.log(scroll);
-        } else {
-            opa.style.opacity = "1";
-            opa.style.zIndex = "1000";
-            // console.log(scroll);
-        }
         });
     </script>
 </body>
