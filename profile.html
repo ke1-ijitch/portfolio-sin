@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <link rel="apple-touch-icon" href="lib/img/fabicon.ico">
+    <link rel="icon" href="lib/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="lib/css/pc/layout.css" >
+    <link rel="stylesheet" href="lib/css/common.css" >
+    <link rel="stylesheet" href="lib/css/pc/style.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="86400">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!-- Three.jsのスクリプトを読み込む -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://github.com/jwagner/simplex-noise.js"></script>
+</head>
+<body id="top">
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+    <div class="container">
+        <canvas id="glCanvas"></canvas>
+        <h1 class="work">Profile</h1>
+       <a href="top.html"><p class="name">Portfolio</p></a>
+        <a href="#" onclick="history.back(); return false;"><p class="return"><span class="return-icon">&lt;</span></p></a>
+        <div class="profile-container">
+            <h1 class="philosophy">Philosophy</h1>
+            <p class="philosophy-description">世の中にはデザイナーが非常に沢山いて、扱う業種や専門、商品など多種多様です。そしてさらに細分化したなかに、競合のデザイナーはたくさんいます。ですが、誰一人としてゼロベースからだと同じものは作れません。<br>なぜなら、今までの人生、これからの人生が全く同じではないからです。当然のことですが、生まれた瞬間から今まで<br>全く同じ人生を歩んできた人はいません。似たような境遇というのは存在し、価値観や考え方など似てくることもあるかもしれませんが、あくまでも似ているだけです。同じでありません。経験したことや環境によって得た感性などその人その人で、<br>表現できるものが違うので、これだけ多くのデザイナーが存在しています。<br>何かと人と人との距離が離れているこの時代に、私は、私の人生で得た感性これから得る感性を活かして、人と人とがコミュニケーションをとることができるようなデザインを追及して今後も活動していきます。</p>
+            <p class="p-name">高松 伊吹</p>
+            <div class="profile">
+                <img class="p-logo" src="lib/img/logo.png" alt="">
+                <p id="name">Name : 高松 伊吹</p>
+                <p id="tel">Tel : 080-2444-1999</p>
+                <p id="mail">Mail : ekaibu.0417200702@gmail.com</p>
+                <p id="address">Address : 兵庫県明石市二見町東二見123-2 イーストハイツ105号</p>
+            </div>
+            <p class="footer-border"></p>
+            <div class="footer" id="page-link">
+                <a href="top.html"><p class="footer-word">Top</p></a>
+                <a href="work.html"><p class="footer-word">Work</p></a>
+                <a href="#top"><p class="footer-word">Profile</p></a>
+                <a href="#top"><p class="footer-word">Contact</p></a>
+            </div>
+            <p class="copy-right">© 2024 Ibuki Takamatsu.</p>
+        </div>
+    </div>
+    <script src="lib/js/glitch.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        let lenis = new Lenis();
+
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        // 特定のセクションにスクロール
+        $('#page-link a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+        var pos = $(elmHash).offset().top;  //idの上部の距離を取得
+        $('body,html').animate({scrollTop: pos}, 800); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+        return false;
+        });
+    </script>
+</body>
+</html>
